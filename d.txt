@@ -24,6 +24,9 @@ $and //  db.collectionName.find({ $and: [ {key1:value1}, { key2:value2} ] })
 $or //  db.collectionName.find({ $or: [ {key1:value1}, { key2:value2} ] })
 $not //  db.collectionName.find({ $not: [ {key1:value1}, { key2:value2} ] })
 
+
+db.collectionname.fin({$and:[{&and: [{status:"A"},{$or: [{qty:{$lt:30}},{item:\^p\}]}]}]})
+
  -- Aggregate Functions -- 
 
 $match: It is used for filtering the documents can reduce the amount of documents that are given as input to the next stage.
